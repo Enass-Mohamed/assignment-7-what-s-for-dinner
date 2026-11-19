@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>What's For Dinner?</title>
+    <link rel="stylesheet" href="./main.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-utensils"></i>
+            </div>
+
+            <div class="logo-text">
+                <h2>What's For Dinner</h2>
+                <p>Your daily meal inspiration</p>
+            </div>
+
+        </div>
+
+        <div class="nav-icons">
+
+            <i class="fa-solid fa-bookmark" id="navSave"></i>
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <i class="fa-solid fa-gear"></i>
+
+        </div>
+
+    </header>
+
+    <main class="container">
+
+        <section class="hero" id="hero">
+
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <strong>4.8</strong>
+                <span>(198 reviews)</span>
+            </div>
+
+            <div class="recipe-info">
+
+                <div class="info-item">
+
+                    <i class="fa-regular fa-clock orange"></i>
+
+                    <p>Prep Time</p>
+
+                    <strong id="prepTime">15 min</strong>
+
+                </div>
+
+                <div class="info-item">
+
+                    <i class="fa-solid fa-fire red"></i>
+
+                    <p>Cook Time</p>
+
+                    <strong id="cookTime">0 min</strong>
+
+                </div>
+
+                <div class="info-item">
+
+                    <i class="fa-solid fa-users blue"></i>
+
+                    <p>Servings</p>
+
+                    <strong id="servings">2 people</strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="content">
+
+            <div class="tags">
+
+                <span class="easy" id="difficulty">Easy</span>
+
+                <span class="category" id="category">
+                    Mediterranean
+                </span>
+
+            </div>
+
+            <div class="title-row">
+
+                <div class="recipe-title">
+
+                    <h1 id="recipeName">Caesar Salad</h1>
+
+                    <p id="description">
+                        Classic salad with crispy romaine and creamy dressing
+                    </p>
+
+                </div>
+
+                <div class="actions">
+
+                    <button id="saveBtn" title="Save Recipe">
+                        <i class="fa-regular fa-bookmark"></i>
+                    </button>
+
+                    <button id="shareBtn" title="Share Recipe">
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="tabs">
+
+                <button class="tab active" data-tab="ingredients">
+
+                    <i class="fa-solid fa-list"></i>
+                    Ingredients
+
+                </button>
+
+                <button class="tab" data-tab="instructions">
+
+                    <i class="fa-solid fa-book-open"></i>
+                    Instructions
+
+                </button>
+
+                <button class="tab" data-tab="nutrition">
+
+                    <i class="fa-solid fa-chart-pie"></i>
+                    Nutrition
+
+                </button>
+
+                <button class="tab" data-tab="tips">
+
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Chef's Tips
+
+                </button>
+
+            </div>
+
+            <div class="tab-content" id="tabContent">
+
+            </div>
+
+            <div class="bottom">
+
+                <button class="change-btn" id="changeRecipe">
+
+                    <i class="fa-solid fa-rotate"></i>
+
+                    Try Another Recipe
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
